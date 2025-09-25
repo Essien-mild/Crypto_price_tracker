@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000/prices/?coins=bitcoin,ethereum,cardano,dogecoin,solana,xrp,polkadot,tron,polygon,litecoin,avalanche,chainlink,stellar";
+const API_URL = "https://mild.pythonanywhere.com/prices/?coins=bitcoin,ethereum,cardano,dogecoin,solana,xrp,polkadot,tron,polygon,litecoin,avalanche,chainlink,stellar";
 let allCoins = []; // store all coins for filtering
 
 async function fetchPrices() {
