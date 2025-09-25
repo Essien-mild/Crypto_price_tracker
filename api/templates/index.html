@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Price Tracker</title>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+  <h1>Crypto Price Tracker</h1>
+
+  <div class="controls">
+    <input type="text" id="search-bar" placeholder="Search for a coin...">
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </div>
+
+  <table id="crypto-table">
+    <thead>
+      <tr>
+        <th>Coin</th>
+        <th>Price (USD)</th>
+        <th>24h Change</th>
+        <th>Market Cap</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
